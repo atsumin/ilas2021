@@ -3,7 +3,7 @@ from slackbot.bot import respond_to
 
 @respond_to(r'^todo:\s+add\s+(\S+)\s+(\S+)')
 def add(message, title, limit_at):
-  todo_tabel = TodoDB()
+  todo_table = TodoDB()
   todo_table.add(title, limit_at)
   message.reply(get_todo_list())
 
