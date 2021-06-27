@@ -1,1 +1,2 @@
-worker: python botapp.py | python webapp.py
+worker: python botapp.py
+web: gunicorn app:webapp
