@@ -1,4 +1,4 @@
-from ../tododb import TodoDB
+from tododb import TodoDB
 from slackbot.bot import respond_to
 
 @respond_to(r'^todo:\s+add\s+(\S+)\s+(\S+)')
