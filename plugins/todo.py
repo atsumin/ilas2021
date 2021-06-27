@@ -18,5 +18,5 @@ def get_todo_list():
   todo_list = todo_table.all()
   msg = ""
   for item in todo_list:
-    msg += item.id + ": " + item.title + ": " + item.limit_at + "\n"
+    msg += f"{item['id']}: {item['title']}: {item['limit_at']}\n"
   return msg
