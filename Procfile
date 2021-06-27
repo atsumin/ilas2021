@@ -1,2 +1,2 @@
 worker: python botapp.py
-web: python webapp.py
+web: gunicorn webapp:app --log-file -
